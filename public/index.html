@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel=stylesheet href="design.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script defer src="fontawesome/js/fontawesome-all.js"></script>
+  <script src="src/jquery-3.3.1.min.js"></script>
+  <title>Evelyn - Career Builder ChatBot</title>
+</head>
+
+<body onload="userMessage('');">
+  <div class="container">
+    <div class="row">
+      <div id="top_bar" class="col pt-sm-2 bg-secondary">
+        <h1>Evelyn - Career Path Builder</h1>
+      </div>
+    </div>
+    <section class="row">
+      <div class="col-sm-8 py-sm-2">
+        <div id="jasephen">
+          <div class="chatbot row pb-sm-2">
+            <div class="col">
+              <div id="chatBox" class="dialogContainer">
+                <div class="message">
+                  <div class="bot_parent">
+                    <div class="bot">
+                      Messages:
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End class chatbot -->
+
+
+        <div class="row pb-sm-2">
+          <div class="col-10">
+            <div id="sendbtn">
+              <p>
+                <span class="input">
+                  <input type="text" id="chatMessage" class="dialogInput form-control form-control-sm" placeholder="Type your question here" onkeypress="return newEvent(event)">
+                  <span></span>
+                </span>
+              </p>
+            <a href="#" class="col-2" id="enterButton" onclick="submitMessage(); return false;">SEND</a>
+          </div>
+        </div>
+
+
+    </section>
+  </div>
+  <script src="src/bot.js"></script>
+</body>
+
+</html>
